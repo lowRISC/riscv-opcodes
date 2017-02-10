@@ -57,6 +57,10 @@ csrs = [
   (0xC01, 'time'),
   (0xC02, 'instret'),
 
+  # Nonstandard User R/W
+  (0x8f0, 'tagctrl'),
+  (0x8ff, 'swtrace'),
+
   # Standard Supervisor R/W
   (0x100, 'sstatus'),
   (0x104, 'sie'),
@@ -85,8 +89,8 @@ csrs = [
   (0x342, 'mcause'),
   (0x343, 'mbadaddr'),
   (0x344, 'mip'),
-  (0x310, 'mucounteren'),
-  (0x311, 'mscounteren'),
+  (0x320, 'mucounteren'),
+  (0x321, 'mscounteren'),
   (0x700, 'mucycle_delta'),
   (0x701, 'mutime_delta'),
   (0x702, 'muinstret_delta'),

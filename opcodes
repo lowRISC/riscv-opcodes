@@ -202,3 +202,6 @@ fmadd.d   rd rs1 rs2 rs3 rm 26..25=1 6..2=0x10 1..0=3
 fmsub.d   rd rs1 rs2 rs3 rm 26..25=1 6..2=0x11 1..0=3
 fnmsub.d  rd rs1 rs2 rs3 rm 26..25=1 6..2=0x12 1..0=3
 fnmadd.d  rd rs1 rs2 rs3 rm 26..25=1 6..2=0x13 1..0=3
+
+tagr    rd rs1 31..20=0  14..12=0x0 6..2=0x15 1..0=3
+tagw    rd rs1 31..20=0  14..12=0x1 6..2=0x15 1..0=3
