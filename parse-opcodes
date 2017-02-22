@@ -44,6 +44,7 @@ causes = [
   (0x09, 'supervisor_ecall'),
   (0x0A, 'hypervisor_ecall'),
   (0x0B, 'machine_ecall'),
+  (0x10, 'tag check fail'),
 ]
 
 csrs = [
