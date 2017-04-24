@@ -59,7 +59,7 @@ csrs = [
   (0xC02, 'instret'),
 
   # Nonstandard User R/W
-  (0x8f0, 'tagctrl'),
+  (0x8f0, 'utagctrl'),
   (0x8ff, 'swtrace'),
 
   # Standard Supervisor R/W
@@ -78,6 +78,9 @@ csrs = [
   (0xD00, 'scycle'),
   (0xD01, 'stime'),
   (0xD02, 'sinstret'),
+
+  # Nonstandard Supervisor R/W
+  (0x9F0, 'stagctrl'),
 
   # Standard Machine R/W
   (0x300, 'mstatus'),
@@ -111,6 +114,9 @@ csrs = [
 
   # Nonstandard Machine R/W
   (0x7C2, 'mreset'),
+  (0xBF0, 'mtagctrl'),
+  (0x7F0, 'mutagctrlen'),
+  (0x7F1, 'mstagctrlen'),
 ]
 
 csrs32 = [
